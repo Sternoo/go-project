@@ -26,17 +26,6 @@ func GetTagTotal(maps interface{}) (count int) {
 	return
 }
 
-func ExitTagByName(name string) bool {
-	var tag Tag
-	db.Select("id").Where("name = ?", name).First(&tag)
-
-	if tag.ID > 0 {
-		return true
-	}
-
-	return false
-}
-
 func AddTag(name string, state int, createdBy string) bool {
 	db.Create(&Tag{
 		Name:       name,
@@ -45,28 +34,6 @@ func AddTag(name string, state int, createdBy string) bool {
 	})
 
 	return true
-}
-
-func (tag *Tag) BeforeCreate(scope *gorm.Scope) error {
-	scope.SetColumn("CreatedOn", time.Now().Unix())
-
-	return nil
-}
-
-func (tag *Tag) BeforeUpdate(scope *gorm.Scope) error {
-	scope.SetColumn("ModifiedOn", time.Now().Unix())
-
-	return nil
-}
-
-func ExistTagById(id int) bool {
-	var tag Tag
-	db.Select("id").Where("id = ?", id).First(&tag)
-	if tag.ID > 0 {
-		return true
-	}
-
-	return false
 }
 
 func DeleteTag(id int) bool {
@@ -79,4 +46,37 @@ func EditTag(id int, data interface{}) bool {
 	db.Model(&Tag{}).Where("id = ?", id).Updates(data)
 
 	return true
+}
+
+func ExitTagByName(name string) bool {
+	var tag Tag
+	db.Select("id").Where("name = ?", name).First(&tag)
+
+	if tag.ID > 0 {
+		return true
+	}
+
+	return false
+}
+
+func ExistTagById(id int) bool {
+	var tag Tag
+	db.Select("id").Where("id = ?", id).First(&tag)
+	if tag.ID > 0 {
+		return true
+	}
+
+	return false
+}
+
+func (tag *Tag) BeforeCreate(scope *gorm.Scope) error {
+	scope.SetColumn("CreatedOn", time.Now().Unix())
+
+	return nil
+}
+
+func (tag *Tag) BeforeUpdate(scope *gorm.Scope) error {
+	scope.SetColumn("ModifiedOn", time.Now().Unix())
+
+	return nil
 }

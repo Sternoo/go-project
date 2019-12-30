@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98d39587-f1e4-4525-b1db-6a1c580de82b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/gin-blog/models/models.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/gin-blog/models/models.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gin-blog/models/tag.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/gin-blog/models/tag.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gin-blog/routers/router.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/gin-blog/routers/router.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,9 +85,9 @@
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
     <state x="842" y="226" key="SettingsEditor/0.23.2048.1129@0.23.2048.1129" timestamp="1577668154977" />
-    <state x="1006" y="276" width="670" height="676" key="search.everywhere.popup" timestamp="1577352372509">
+    <state x="1006" y="276" width="670" height="676" key="search.everywhere.popup" timestamp="1577675329603">
       <screen x="0" y="23" width="2048" height="1129" />
     </state>
-    <state x="1006" y="276" width="670" height="676" key="search.everywhere.popup/0.23.2048.1129@0.23.2048.1129" timestamp="1577352372509" />
+    <state x="1006" y="276" width="670" height="676" key="search.everywhere.popup/0.23.2048.1129@0.23.2048.1129" timestamp="1577675329603" />
   </component>
 </project>
