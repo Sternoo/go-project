@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="98d39587-f1e4-4525-b1db-6a1c580de82b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gin-blog/routers/api/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/gin-blog/routers/api/auth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gin-blog/routers/api/v1/article.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/gin-blog/routers/api/v1/article.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
