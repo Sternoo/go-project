@@ -6,6 +6,7 @@
     <mapping directory="$PROJECT_DIR$/src/github.com/PuerkitoBio/purell" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/PuerkitoBio/urlesc" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/Unknwon/com" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/alecthomas/template" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/astaxie/beego" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/cpuguy83/go-md2man" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/dgrijalva/jwt-go" vcs="Git" />
