@@ -12,9 +12,9 @@ import (
 	"time"
 )
 
-// @title Swagger Example API
+// @title Golang Gin API
 // @version 1.0
-// @description This is a sample server celler server.
+// @description An example of gin
 // @termsOfService http://swagger.io/terms/
 
 // @contact.name API Support
