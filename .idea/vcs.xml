@@ -30,6 +30,7 @@
     <mapping directory="$PROJECT_DIR$/src/github.com/mailru/easyjson" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/mattn/go-isatty" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/swaggo/cli" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/src/github.com/swaggo/files" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/swaggo/gin-swagger" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/swaggo/swag" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/github.com/ugorji/go" vcs="Git" />

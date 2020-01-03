@@ -1,3 +1,4 @@
+basePath: /api/v1
 definitions:
   app.Response:
     properties:
@@ -8,29 +9,36 @@ definitions:
       msg:
         type: string
     type: object
+host: localhost:8080
 info:
-  contact: {}
-  license: {}
+  contact:
+    email: support@swagger.io
+    name: API Support
+    url: http://www.swagger.io/support
+  description: This is a sample server celler server.
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+  title: Swagger Example API
+  version: "1.0"
 paths:
   /api/v1/tags:
     post:
       parameters:
       - description: Name
-        in: body
+        in: query
         name: name
         required: true
-        schema:
-          type: string
+        type: string
       - description: State
-        in: body
+        in: query
         name: state
-        schema:
-          type: integer
+        type: integer
       - description: CreatedBy
-        in: body
+        in: query
         name: created_by
-        schema:
-          type: integer
+        type: integer
       produces:
       - application/json
       responses:
@@ -38,11 +46,7 @@ paths:
           description: OK
           schema:
             $ref: '#/definitions/app.Response'
-        "500":
-          description: Internal Server Error
-          schema:
-            $ref: '#/definitions/app.Response'
-      summary: Add article tag
+      summary: 新增文章标签
   /api/v1/tags/{id}:
     put:
       parameters:
@@ -51,23 +55,20 @@ paths:
         name: id
         required: true
         type: integer
-      - description: Name
-        in: body
+      - description: ID
+        in: query
         name: name
         required: true
-        schema:
-          type: string
+        type: string
       - description: State
-        in: body
+        in: query
         name: state
-        schema:
-          type: integer
+        type: integer
       - description: ModifiedBy
-        in: body
+        in: query
         name: modified_by
         required: true
-        schema:
-          type: string
+        type: string
       produces:
       - application/json
       responses:
@@ -75,9 +76,5 @@ paths:
           description: OK
           schema:
             $ref: '#/definitions/app.Response'
-        "500":
-          description: Internal Server Error
-          schema:
-            $ref: '#/definitions/app.Response'
-      summary: Update article tag
+      summary: 修改文章标签
 swagger: "2.0"

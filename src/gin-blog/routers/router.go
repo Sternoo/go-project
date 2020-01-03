@@ -5,9 +5,10 @@ import (
 	"gin-blog/middleware/jwt"
 	"gin-blog/pkg/setting"
 	"gin-blog/routers/api"
-	v1 "gin-blog/routers/api/v1"
+	"gin-blog/routers/api/v1"
 	"github.com/gin-gonic/gin"
-	ginSwagger "github.com/swaggo/gin-swagger"
+	"github.com/swaggo/gin-swagger"
+	//_ "github.com/swaggo/gin-swagger/example/basic/docs"
 	"github.com/swaggo/gin-swagger/swaggerFiles"
 )
 
